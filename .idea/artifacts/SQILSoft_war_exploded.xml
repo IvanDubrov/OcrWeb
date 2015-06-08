@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SQILSoft:war exploded">
+    <output-path>$PROJECT_DIR$/target/JavaServerFaces</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SQILSoft/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SQILSoft" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.icefaces:icefaces-ace:3.3.0" />
+          <element id="library" level="project" name="Maven: org.icefaces:icefaces:3.3.0" />
+          <element id="library" level="project" name="Maven: org.icepush:icepush:3.3.0" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
+          <element id="library" level="project" name="Maven: javax.mail:mail:1.4.1" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.12" />
+          <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.1.7" />
+          <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.1.7" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+          <element id="library" level="project" name="Maven: com.sun.el:el-ri:1.0" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.31" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.2.3" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

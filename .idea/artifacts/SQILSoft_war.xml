@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SQILSoft:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="JavaServerFaces.war">
+      <element id="artifact" artifact-name="SQILSoft:war exploded" />
+    </root>
+  </artifact>
+</component>

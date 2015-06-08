@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:ace="http://www.icefaces.org/icefaces/components">
+<h:outputScript library="jr" name="common.js"/>
+
+
+<h:head>
+    <title>ADMIN</title>
+</h:head>
+<h:body>
+    <h3>authorization</h3>
+    <h:form>
+        <ui:component>
+            <h:outputStylesheet library="style" name="style.css"/>
+
+            <div class="container">
+                <div class="row">
+                    <div class="span1">
+                        <p><h:commandButton style="height: 40px; width: 186px; color: #001593" value="Admin" action="#{indexBean.adminPage}"/></p>
+                    </div>
+                    <div class="span1">
+                        <p><h:commandButton style="height: 40px; width: 186px; color: #001593" value="Guest" action="#{indexBean.guestPage}"/></p>
+                    </div>
+                    <div class="span1">
+                        <p><h:commandButton style="height: 40px; width: 186px; color: #001593" value="Welcome" action="#{indexBean.welcomePage}"/></p>
+                    </div>
+                    <div class="span1">
+                        <p><h:commandButton style="height: 40px; width: 186px; color: #001593" value="Authorization" action="#{indexBean.authorizationPage}"/></p>
+                    </div>
+                    <div class="span1">
+                        <p><h:commandButton style="height: 40px; width: 186px; color: #001593" value="Authorization" action="#{indexBean.authorizationPage}"/></p>
+                    </div>
+                    <div class="span1">
+                        <p><h:commandButton style="height: 40px; width: 186px; color: #001593" value="Authorization" action="#{indexBean.authorizationPage}"/></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </ui:component>
+    </h:form>
+</h:body>
+</html>

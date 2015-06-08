@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:ace="http://www.icefaces.org/icefaces/components">
+<h:outputScript library="jr" name="common.js"/>
+
+
+<h:head>
+    <title>ADMIN</title>
+</h:head>
+<h:body>
+    <h3>authorization</h3>
+
+    <ui:component>
+        <h:outputStylesheet library="style" name="style.css"/>
+
+        <div class="container">
+            <div class="row">
+                <div class="span3" style="height: 200px; padding: 50px;">
+                    <h2 style="align-content: center; color: white">Выберите пользователя из таблицы</h2>
+                    <h:commandButton style="align-content: center; width: 228px; height: 50px; color: #001593 "
+                                     value="Удалить" action="#{adminBean.delete}"/>
+                </div>
+                <div class="span3" style="height: 200px;">
+                    <p>Text 2 Admin</p>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="span4" style="height: 450px; overflow: scroll">
+
+                    <ace:dataTable
+                            value="#{adminBean.tableUserOfBD}"
+                            var="UserDB"
+                            rows="100"
+                            selectionMode="single"
+                            rowSelectListener="#{adminBean.selectListener}">
+
+                        <ace:column headerText="Телефон">
+                            <h:outputText value="#{UserDB.id}"/>
+                        </ace:column>
+                        <ace:column headerText="Имя">
+                            <h:outputText value="#{UserDB.name}"/>
+                        </ace:column>
+                        <ace:column headerText="Имя">
+                            <h:outputText value="#{UserDB.year_of}"/>
+                        </ace:column>
+                    </ace:dataTable>
+
+                </div>
+                <div class="span2" style="height: 450px; padding: 50px;">
+                    <h2 style="align-content: center; color: white">Добавление пользователя</h2>
+                    <ace:textAreaEntry id="insertName" value="#{adminBean.name}" label="Имя пользователя"
+                                       labelPosition="inField"
+                                       requiredMessage="пустое поле Имя">
+
+                    </ace:textAreaEntry>
+                    <ace:message for="insertName"/>
+                    <ace:textAreaEntry id="insertPassword" value="#{adminBean.year_of}" label="Год рождения"
+                                       labelPosition="inField"
+                                       requiredMessage="пустое поле Пароль"/>
+
+                    <ace:message for="insertPassword"/>
+
+                    <ace:message for="insertPhone"/>
+
+                    <h:commandButton style="align-content: center; width: 228px; height: 50px; color: #001593"
+                                     value="Добавить" action="#{adminBean.insert}"/>
+
+                </div>
+            </div>
+
+        </div>
+    </ui:component>
+
+</h:body>
+</html>

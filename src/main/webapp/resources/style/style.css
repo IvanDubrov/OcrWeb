@@ -1,0 +1,84 @@
+*
+{
+    box-sizing: border-box;
+}
+.container {
+    width: 1208px;
+    border-radius: 10px 10px 10px 10px;
+    background: #6589F2;
+    margin: 0 auto;
+}
+
+.row{
+    border: 3px solid #385eff;
+    border-radius: 10px 10px 10px 10px;
+
+    margin-bottom: 20px;
+}
+.row:after{
+    clear: both;
+    display: block;
+    content: '.';
+    height: 0;
+    visibility: hidden;
+}
+[class*="span"]
+{
+    border: 3px solid #001593;
+
+    box-shadow: 0 0 100px rgba(249, 255, 251, 0.50); /* Параметры тени */
+
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    margin-right: 10px;
+    display: inline;
+}
+[class*="span"]:last-child
+{
+    float: right;
+    margin-right: 0;
+}
+.span1 {
+    width: 192px;
+}
+
+.span2 {
+    width: 394px;
+}
+
+.span3 {
+    width: 596px;
+}
+
+.span4 {
+    width: 798px;
+}
+
+.span5 {
+    width: 1000px;
+}
+.offset1 {
+    margin-right:  192px;
+}
+
+.offset2 {
+    margin-left:  394px;
+}
+
+.offset3 {
+    margin-left:  596px;
+}
+
+.offset4 {
+    margin-left:  798px;
+}
+
+.offset5 {
+    margin-left:  1000px;
+}
+[class*="offset"]
+{
+    border: 1px solid #80041b;
+
+}
+
